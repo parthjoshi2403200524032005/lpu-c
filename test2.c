@@ -6,6 +6,12 @@
 //     int age;
 //     printf("Enter your age :");
 //     scanf("%d", &age);
+//     // if(age>=18){
+//     //     printf("You are eligible to vote");
+//     // }
+//     // else{
+//     //     printf("You are not eligible to vote");
+//     // }
 //     age >= 18 ? printf("You are eligible to vote") : printf("You are not eligible to vote");
 //     return 0;
 // }
@@ -18,6 +24,7 @@
 //     char day;
 //     printf("Enter the day :");
 //     scanf("%c", &day);
+//     printf("The day is :", day);
 //     switch (day)
 //     {
 //     case 'm':
@@ -52,21 +59,21 @@
 
 // int main()
 // {
-//     int i = 1;
+//     int i = 2;
 
-//      printf(" %d", i++); // use then increment
-//      printf("\n %d", i);
+//  printf(" %d", i++); // use then increment
+//  printf("\n %d", i);
 
-//     printf("%d", ++i); // increment then use
-//     printf("\n%d", i);
+// printf("%d", ++i); // increment then use
+// printf("\n%d", i);
 
-//     printf("%d", i++ + ++i); // 4
+// printf("%d", i++ + ++i);
 
-//     printf("%d", i--); // use then decrement
-//     printf("\n%d", i);
+// printf("%d", i--); // use then decrement
+// printf("\n%d", i);
 
-//     printf("%d", --i); // decrement then use
-//     printf("\n%d", i);
+// printf("%d", --i); // decrement then use
+// printf("\n%d", i);
 
 //     return 0;
 // }
@@ -75,10 +82,9 @@
 
 // #include <stdio.h>
 
-// int main()
-// {
+// int main(){
 //     int i;
-//     for (i = 0; i < 5; i++){
+//     for (i = 1; i <= 10; i++){
 //         printf("%d\n", i);
 //     }
 //     return 0;
@@ -90,7 +96,7 @@
 
 // int main(){
 //     int i=1;
-//     while (i<5){
+//     while (i<=5){
 //         printf("Hello\n");
 //         i++;
 //     }
@@ -146,15 +152,31 @@
 // #include <stdio.h>
 
 // void fun();
+// void add(); // function declaration
 
 // int main()
 // {
 //     fun();
+//     // add();
+
 //     return 0;
 // }
 // void fun()
 // {
-//     printf("Hello");
+//     int n;
+
+//     for (n = 1; n <= 10; n++)
+//     {
+//         printf("\n Hello");
+//         printf("\n World");
+//     }
+// }
+// void add()
+// {
+//     int a, b;
+//     printf("Enter two numbers: ");
+//     scanf("%d%d", &a, &b);
+//     printf("Sum of a and b %d", a + b);
 // }
 
 // function with parameter
@@ -340,4 +362,3 @@
 //     printf("Temperature in celsius is %f", c);
 //     return 0;
 // }
-
