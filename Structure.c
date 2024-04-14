@@ -258,3 +258,80 @@
 //     // free(ptr);
 //     return 0;
 // }
+
+// calloc is used to allocate memory dynamically in C.
+
+// #include <stdio.h>
+// #include <stdlib.h> // for calloc function.
+
+// int main()
+// {
+//     int *ptr;
+//     ptr = (int *)calloc(5, sizeof(int));
+//     ptr[0] = 1;
+//     ptr[1] = 3;
+//     ptr[2] = 5;
+//     ptr[3] = 7;
+//     ptr[4] = 9;
+//     for (int i = 0; i < 5; i++)
+//     {
+//         printf("%d\n", ptr[i]);
+//     }
+//     printf("%d", ptr[0]);
+//     // free(ptr);
+//     return 0;
+// }
+
+
+// free is used to deallocate memory dynamically in C.
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main()
+// {
+//     int *ptr;
+//     ptr = (int *)calloc(5, sizeof(int));
+//     ptr[0] = 1;
+//     ptr[1] = 3;
+//     ptr[2] = 5;
+//     ptr[3] = 7;
+//     ptr[4] = 9;
+//     for (int i = 0; i < 5; i++)
+//     {
+//         printf("%d\n", ptr[i]);
+//     }
+//     free(ptr);
+
+//     ptr = (int *)calloc(5, sizeof(int));
+//     for(int i=0;i<5;i++){
+//         printf("%d\n", ptr[i]);
+//     }
+//     return 0;
+// }
+
+// realloc is used to reallocate memory dynamically in C.
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main()
+// {
+//     int *ptr;
+//     ptr = (int *)calloc(5, sizeof(int));
+//     ptr[0] = 1;
+//     ptr[1] = 3;
+//     ptr[2] = 5;
+//     ptr[3] = 7;
+//     ptr[4] = 9;
+//     for (int i = 0; i < 5; i++)
+//     {
+//         printf("%d\n", ptr[i]);
+//     }
+//     free(ptr);
+
+//     ptr = (int *)realloc(ptr, 8* sizeof(int));
+//     for (int i = 0; i < 8; i++)
+//     {
+//         printf("%d\n", ptr[i]); 
+//     }
+//     return 0;
+// }
